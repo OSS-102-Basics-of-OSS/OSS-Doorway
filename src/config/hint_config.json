@@ -139,7 +139,7 @@
                 "penalty" : 5
             },
             "H2":{
-                "content": "### 💡Hints\n\n**Hint 2:** In the issue’s **comment section**, type **\"@\"** followed by the contributor’s username to tag them.",
+                "content": "### 💡Hints\n\n**Hint 2:** In the issue's **comment section**, type **\"@\"** followed by the contributor's username to tag them.",
                 "video": null,
                 "image": "https://github.com/user-attachments/assets/0f13af3a-015c-416e-9d44-2efba1d928c9",
                 "sequence": 2,
@@ -195,6 +195,24 @@
                 "sequence": 2,
                 "penalty" : 5
             }
+        }
+    },
+    "Q4": {
+        "T1": {
+            "hints": [
+                "💡 **Hint 1:** Look at the top navigation bar of the repository page.",
+                "💡 **Hint 2:** The number is displayed next to the 'Issues' tab.",
+                "💡 **Hint 3:** Make sure you're counting only OPEN issues, not closed ones."
+            ]
+        }
+    },
+    "Q5": {
+        "T1": {
+            "hints": [
+                "💡 **Hint 1:** Look at the top navigation bar of the repository page.",
+                "💡 **Hint 2:** The number is displayed next to the 'Issues' tab.",
+                "💡 **Hint 3:** Make sure you're counting only OPEN issues, not closed ones."
+            ]
         }
     }
 }

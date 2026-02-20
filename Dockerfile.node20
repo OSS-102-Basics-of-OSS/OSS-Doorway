@@ -2,7 +2,7 @@
 FROM node:20.18.1-bullseye-slim
 
 # Build cache bust to ensure fresh build
-ARG CACHE_BUST=3
+ARG CACHE_BUST=5
 
 # Debug: Show Node.js version
 RUN node --version && npm --version
@@ -29,7 +29,12 @@ RUN npm ci --production --verbose
 
 # Copy requirements and install Python dependencies
 COPY requirements.txt ./
-RUN pip3 install --upgrade pip && pip3 install -r requirements.txt
+RUN echo "Installing Python dependencies..." && \
+    cat requirements.txt && \
+    pip3 install --upgrade pip && \
+    pip3 install -r requirements.txt && \
+    echo "Verifying PIL installation..." && \
+    python3 -c "from PIL import Image; print('PIL imported successfully')"
 
 # Copy the rest of the application files
 COPY . .
